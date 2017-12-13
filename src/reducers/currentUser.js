@@ -1,5 +1,5 @@
 import { USER_SIGNED_IN } from '../actions/user/sign-in'
-// import { USER_SIGNED_OUT } from '../actions/user/sign-out'
+import { USER_SIGNED_OUT } from '../actions/user/sign-out'
 
 const CURRENT_USER_KEY = 'currentUserMemoryGame'
 const currentUserFromLocalStorage = JSON.parse(
@@ -13,9 +13,9 @@ export default (state = currentUserFromLocalStorage, { type, payload } = {}) => 
       window.localStorage.setItem(CURRENT_USER_KEY, JSON.stringify(currentUser))
       return currentUser
 
-    // case USER_SIGNED_OUT :
-    //   window.localStorage.removeItem(CURRENT_USER_KEY)
-    //   return null
+    case USER_SIGNED_OUT :
+      window.localStorage.removeItem(CURRENT_USER_KEY)
+      return null
 
     default :
       return state
