@@ -5423,8 +5423,6 @@ react-scripts@1.0.17:
   optionalDependencies:
     fsevents "1.1.2"
 
-<<<<<<< HEAD
-=======
 react-test-renderer@^16.2.0:
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.2.0.tgz#bddf259a6b8fcd8555f012afc8eacc238872a211"
@@ -5433,7 +5431,6 @@ react-test-renderer@^16.2.0:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
->>>>>>> 78114b11628e0f4c1bc3572969dd61c1bee4d5b2
 react@^16.2.0:
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.2.0.tgz#a31bd2dab89bff65d42134fa187f24d054c273ba"
