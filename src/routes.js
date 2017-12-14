@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
+import BatchesContainer from './containers/BatchesContainer'
 
 import {
   SignIn,
@@ -10,7 +11,7 @@ export default class Routes extends Component {
     return (
       <div>
         <Route exact path="/" component={SignIn} />
-  
+        <Route path="/batches" component={BatchesContainer} />
       </div>
     )
   }
