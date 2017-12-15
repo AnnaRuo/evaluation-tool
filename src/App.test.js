@@ -3,7 +3,7 @@ import { shallow } from 'enzyme'
 import chai, { expect } from 'chai'
 import chaiEnzyme from 'chai-enzyme'
 import App from './App'
-import BatchesContainer from './components/Batch/BatchesContainer'
+
 
 chai.use(chaiEnzyme())
 
@@ -12,9 +12,5 @@ describe('<App />', () => {
 
   it('wraps everything in a div tag', () => {
     expect(app).to.have.tagName('div')
-  })
-
-  it('contains the RecipesContainer', () => {
-    expect(app).to.have.descendants(BatchesContainer)
   })
 })
